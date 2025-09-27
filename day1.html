@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Overview of CSS</title>
+  <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+  <h1>Detailed Overview of CSS</h1>
+
+  <h2>What is CSS?</h2>
+  <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation (look and feel) of web pages written in HTML or XML. It defines how elements should appear—layout, colors, fonts, spacing, and animations—across different devices and screen sizes.</p>
+
+  <h2>Key Features of CSS</h2>
+  <ul>
+    <li>Separation of Content & Style: HTML handles structure/content, while CSS controls design/appearance.</li>
+    <li>Cascading Nature: CSS follows a cascade hierarchy where the last applied or most specific rule takes priority.</li>
+    <li>Reusability: A single CSS file can style multiple HTML pages.</li>
+    <li>Responsive Design: Supports media queries to adapt layouts for different screen sizes.</li>
+    <li>Cross-Browser Compatibility: Works on all modern browsers.</li>
+  </ul>
+
+  <h2>Types of CSS</h2>
+  <ul>
+    <li><strong>Inline:</strong> Applied directly to an HTML element using the <code>style</code> attribute.</li>
+    <li><strong>Internal:</strong> Written inside a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of an HTML file.</li>
+    <li><strong>External:</strong> Stored in a separate .css file and linked via a <code>&lt;link&gt;</code> tag.</li>
+  </ul>
+
+  <h2>CSS Syntax</h2>
+  <p>The basic syntax is:</p>
+  <pre>
+selector {
+    property: value;
+}
+  </pre>
+
+  <h2>Types of Selectors</h2>
+  <ul>
+    <li>Universal Selector: <code>* { margin: 0; }</code></li>
+    <li>Type Selector: <code>p { color: black; }</code></li>
+    <li>Class Selector: <code>.highlight { background: yellow; }</code></li>
+    <li>ID Selector: <code>#header { text-align: center; }</code></li>
+    <li>Attribute Selector: <code>input[type="text"] { border: 1px solid gray; }</code></li>
+    <li>Pseudo-classes: <code>a:hover { color: red; }</code></li>
+    <li>Pseudo-elements: <code>p::first-letter { font-size: 2em; }</code></li>
+  </ul>
+
+  <h2>Core CSS Properties</h2>
+  <ul>
+    <li>Text & Font: color, font-family, font-size, line-height</li>
+    <li>Backgrounds: background-color, background-image</li>
+    <li>Box Model: margin, padding, border, width, height</li>
+    <li>Positioning: position, top, left, z-index</li>
+    <li>Layout: display, flexbox, grid</li>
+    <li>Animations & Transitions: transition, transform, @keyframes</li>
+  </ul>
+
+  <h2>CSS Box Model</h2>
+  <p>Every HTML element is treated as a rectangular box with:</p>
+  <ul>
+    <li><strong>Content:</strong> Text or images inside the element.</li>
+    <li><strong>Padding:</strong> Space between content and border.</li>
+    <li><strong>Border:</strong> Surrounds the padding.</li>
+    <li><strong>Margin:</strong> Space outside the border.</li>
+  </ul>
+
+  <h2>Responsive Design</h2>
+  <p>CSS helps create layouts that adapt to different devices using:</p>
+  <ul>
+    <li>Media Queries</li>
+    <li>Flexbox & Grid for fluid, dynamic layouts</li>
+  </ul>
+
+  <h2>CSS Preprocessors</h2>
+  <p>Advanced tools like Sass/SCSS, LESS, and Stylus add variables, nesting, mixins, and functions to simplify CSS management.</p>
+
+  <h2>Modern CSS Features</h2>
+  <ul>
+    <li>CSS Variables (Custom Properties)</li>
+    <li>CSS Grid Layout</li>
+    <li>Flexbox</li>
+    <li>Transitions & Animations</li>
+    <li>Dark Mode Support</li>
+  </ul>
+
+  <h2>Advantages of CSS</h2>
+  <ul>
+    <li>Better performance (lighter pages)</li>
+    <li>Easier maintenance and scalability</li>
+    <li>More control over presentation</li>
+    <li>Ensures cross-device responsiveness</li>
+  </ul>
+
+  <h2>Popular CSS Frameworks</h2>
+  <ul>
+    <li>Bootstrap</li>
+    <li>Tailwind CSS</li>
+    <li>Foundation</li>
+    <li>Bulma</li>
+    <li>Materialize</li>
+  </ul>
+
+</body>
+</html>

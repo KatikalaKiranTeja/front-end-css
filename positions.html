@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      height: 2000px;
+      padding: 50px;
+      font-family: sans-serif;
+    }
+
+    .parent {
+      position: relative;
+      border: 2px solid black;
+      height: 600px;
+      padding: 20px;
+    }
+
+    .static {
+      background-color: aqua;
+      height: 100px;
+      width: 200px;
+      position: static;
+    }
+
+    .relative {
+      background-color: blueviolet;
+      height: 100px;
+      width: 200px;
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+
+    .absolute {
+      background-color: brown;
+      height: 100px;
+      width: 200px;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+    }
+
+    .sticky {
+      background-color: chartreuse;
+      height: 100px;
+      width: 200px;
+      position: sticky;
+      top: 0;
+      margin-top: 50px;
+    }
+
+    .fixed {
+      background-color: chocolate;
+      height: 100px;
+      width: 200px;
+      position: fixed;
+      bottom: 10px;
+      right: 75px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Position Examples</h1>
+  <p>Scroll down to see <strong>sticky</strong> and <strong>fixed</strong> in action.</p>
+
+  <div class="parent">
+    <div class="static">Static</div>
+    <div class="relative">Relative</div>
+    <div class="absolute">Absolute</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam recusandae provident commodi nemo magnam id dignissimos neque, nobis, repudiandae repellendus maiores sint facere natus, alias est voluptates iste. 
+        Repellendus unde quas reprehenderit labore laborum culpa doloremque natus est? Accusamus, quae ratione. Ducimus numquam illum consequatur laudantium, ut quis modi excepturi consectetur iste! Ipsa quas similique nostrum porro hic voluptatibus iusto sunt dignissimos, suscipit tempora accusamus aut delectus velit corporis dolore deserunt vero sed ducimus quo accusantium sapiente expedita veritatis! Totam iste eveniet cum, ducimus tempore magnam quae vel expedita harum voluptates, autem, sapiente quo excepturi tempora impedit amet dolor laudantium omnis optio reprehenderit. Similique nisi iusto harum, sit unde sequi neque beatae enim atque, tempore ratione rerum omnis provident, quaerat esse delectus nihil accusantium nesciunt doloribus voluptas excepturi mollitia fuga impedit. Nostrum optio, aspernatur, ut magnam in atque nobis sapiente necessitatibus, soluta voluptate dolores! Ipsam qui ullam quas nam ducimus accusantium repellendus labore laboriosam eius debitis quod doloremque quis quia, placeat minima? Est voluptatem assumenda excepturi debitis commodi dicta culpa illum, quisquam nostrum quo fugiat corrupti tempora maiores eligendi quod cumque ipsum? Laboriosam numquam sed fuga deleniti quidem? Natus quia corporis doloribus quisquam modi aliquid voluptatem eligendi eveniet molestiae veritatis nobis vel tempora esse neque, dolor iste eum libero. Harum possimus tempore ratione voluptate consequuntur ipsum saepe autem assumenda reiciendis laborum optio mollitia, ullam odit, error porro rerum laudantium corporis id facere soluta nihil? Eum hic sed vel, in cupiditate enim nisi repellat esse, eligendi fugiat, ex necessitatibus dolorum aspernatur iure laboriosam inventore quod. Natus porro, dicta voluptatem inventore molestiae quasi ab aliquid distinctio tempora quo quis aliquam blanditiis veniam cumque commodi optio. Ipsa soluta, quasi autem necessitatibus suscipit eaque molestiae voluptate sunt, quam aut nisi amet enim in obcaecati? Sit qui vitae eos dolores aliquam velit blanditiis eius! Quaerat dolorum tempore asperiores totam aut quisquam dignissimos, at illo deserunt cupiditate corporis. Earum libero beatae placeat sit incidunt eius aut aperiam doloribus eum. Minus, quos vero aliquam mollitia neque voluptas, corporis esse ipsam provident officiis quidem illum hic eligendi consectetur. Reprehenderit voluptatum beatae recusandae. Aspernatur similique molestias maiores laboriosam ea est eum natus eius non deserunt omnis, dignissimos tempore. Quis dolorem magnam veniam provident exercitationem numquam magni quaerat quisquam cupiditate, illum dolores enim porro dolore sunt, eos modi ducimus commodi ex quod quae reiciendis eum blanditiis. Alias, provident minus eaque officiis unde modi tempore consequatur. Cum blanditiis necessitatibus, explicabo id reprehenderit sunt deleniti quidem eaque enim iste cupiditate, minima praesentium delectus nobis eos officiis nam sequi. Deleniti blanditiis repudiandae nisi maiores voluptatem assumenda dolore ullam laudantium voluptatibus ipsum ipsam doloribus omnis soluta deserunt natus labore obcaecati eaque quisquam veritatis, debitis, ad magnam quaerat perspiciatis? Porro exercitationem assumenda cumque praesentium? 
+        Voluptatem quod temporibus libero, laudantium magni a vero nesciunt amet soluta iure quia similique corrupti? Vitae corporis tenetur voluptas ad, nisi, aperiam dolor excepturi suscipit repellendus nemo, maxime facere fugiat eaque omnis debitis aliquam ratione qui amet beatae culpa! Corrupti et amet aut laborum temporibus cupiditate hic esse facere molestias quos!</div>
+    <div class="sticky">Sticky</div>
+    <div class="fixed">Fixed</div>
+  </div>
+</body>
+</html> 

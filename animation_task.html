@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent{
+              width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(
+                to bottom,
+                
+                #e38c00 50%,
+                #a85c00 100%
+            );
+        }
+        .class{
+            position: absolute;
+            width: 250px;
+            height: 290px;
+            background-color: #ffde00;
+            color: black;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: glow;
+            animation-duration: 3s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            box-shadow: 
+                0 0 100px 30px #ffde00,
+    
+        
+        }
+    
+        .circle{
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #a85c00; 
+            top: 50%;
+            left: calc(50% + 50px);
+            transform: translate(-50%, -50%);
+            
+        }
+     
+     @keyframes sun-rise-and-fall {
+      0% {
+        box-shadow: 0 0 50px yellow; 
+      }
+      50% {
+          box-shadow: 0 0 30px yellow; 
+      }
+      100% {
+         box-shadow: 0 0 30px yellow;  
+      }
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        
+            <div class="class"></div>
+            <div class="circle"></div>
+        <
+
+    </div>
+</body>
+</html>

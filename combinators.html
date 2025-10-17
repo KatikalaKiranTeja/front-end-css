@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent > h1 {color: aqua;}
+        .parent h1{color: aquamarine;}
+        .parent h1+p{color: rgb(153, 51, 59);}
+        .parent ~ h1{color: blue;}
+
+        .parent > h2{color: rgb(229, 255, 0);}
+        .parent h2{color: rgb(127, 146, 255);}
+        .parent h2+p{color: rgb(153, 51, 114);}
+        .parent ~ h2{color: blue;}
+
+        .parent > p{color: rgb(229, 255, 0);}
+        .parent p{color: rgb(127, 146, 255);}
+        .parent p+p{color: rgb(153, 51, 114);}
+        .parent ~ p{color: blue;}
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <h1>Rey evarra mirantha</h1>
+        <h2>Arey entra edhi</h2>
+        <p>Enneno anukuntam anni jaruguthaya enti</p>
+        <p>Sairam Sairam</p>
+        <div class="child">
+            <h1>Chaduvukondi firstuuu</h1>
+            <p>Evee thaginchukunte manchidhi</p>
+
+        </div>
+        <p>Eppudu chepandi ra abbailuu</p>
+
+    </div>
+</body>
+</html>

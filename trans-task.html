@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .nav {
+        background-color: antiquewhite;
+        text-align: center; 
+        width: 100%;
+        height: 50px;
+    }
+    .subnav {
+        
+        display: inline-block;
+        position: relative; 
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    .drop {
+        
+        display: none;
+        
+        background-color: #f9f9f9;
+        min-width: 120px;
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    .subnav:hover .drop {
+       
+        display: block;
+        position: absolute;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="subnav">
+            Cources
+            <div class="drop">
+                <div><p>html</p></div>
+                <div><p>css</p></div>
+                <div><p>python</p></div>
+            </div>
+        </div>
+        <div class="subnav">
+            Tutorial
+                <div class="drop">
+                    <div><p>html</p></div>
+                    <div><p>css</p></div>
+                    <div><p>python</p></div>
+            </div>
+        </div>
+        <div class="subnav">
+            Placement
+                <div class="drop">
+                    <div><p>100%</p></div>
+                    <div><p>100%</p></div>
+                    <div><p>100%</p></div>
+            </div>
+        </div>
+        <div class="subnav">
+            Certificates
+            <div class="drop">
+                <div><p>python</p></div>
+                <div><p>html</p></div>
+                <div><p>css</p></div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

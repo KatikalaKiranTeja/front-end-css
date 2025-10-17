@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+        .di{
+            position: absolute;
+            font-size: 50px;
+            top: 100px;
+            left: 150px;
+            color: cadetblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="div">
+        <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="">
+       
+    </div>
+    <div class="di">
+         <p>animation</p>
+       </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        .background {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(
+                to bottom,
+                #a85c00 0%,
+                #e38c00 50%,
+                #a85c00 100%
+            );
+        }
+
+        
+        @keyframes sun-rise-and-fall {
+            0% { transform: translateY(0); } 
+            50% { transform: translateY(-10px); } 
+            100% { transform: translateY(0); } 
+        }
+
+        .eclipse-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            
+            animation: sun-rise-and-fall 6s ease-in-out infinite; 
+        }
+
+        .glowing-sun {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: #ffde00;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 
+                0 0 100px 30px #ffde00,
+                0 0 50px 10px #ffaa00;
+        }
+
+        .masking-circle {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #a85c00; 
+            top: 50%;
+            left: calc(50% + 50px);
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="eclipse-container">
+            <div class="glowing-sun"></div>
+            <div class="masking-circle"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

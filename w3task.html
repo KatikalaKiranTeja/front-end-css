@@ -21,9 +21,25 @@
             align-items: center;
             padding: 0 40px;
             box-sizing: border-box;
-            position: fixed;
+            
         }
 
+        .mat{
+        position: relative;
+        justify-content: space-between;
+        height: auto;
+        
+        }
+        .le{
+            position: absolute;
+            bottom: 20px;
+            font-size: 24px;
+            color: grey;
+            letter-spacing: 3px;
+            left: 10px;
+        }
+
+      
         ol {
             list-style: none;
             display: flex;
@@ -48,7 +64,7 @@
             border-bottom: 2px solid whitesmoke;
         }
 
-        img {
+        .cls img {
             width: 456px;
             height: 570px;
             border-radius: 10px;
@@ -155,9 +171,13 @@
     }
     footer{
 
+        background-color: white;
+        height: 100px;
         margin-top: 20px;
         text-align: center;
     }
+
+   
     </style>
 </head>
 <body>
@@ -171,6 +191,14 @@
             </ol>
         </div>
     </nav>
+
+    <div class="burgur">
+        <div class="mat">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="" width="100%" height="auto">
+        <p class="le">Le Catering</p>
+        </div>
+    </div>
+   
 
     <div class="cls">
         <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="Catering Image">
@@ -241,6 +269,7 @@
     </div>
 
     <footer>
+        <br><br>
         <div>Powered by w3.css</div>
     </footer>
 </body>

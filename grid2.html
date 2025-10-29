@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+             grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "a b c"
+            "d e f"
+            "g h i";
+            gap: 20px;
+            background-color: #1d0b0b;
+            height: 100vh;
+
+        }
+        .parent1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "a b c"
+            "d e f";
+            gap: 10px;
+            background-color: #fff; 
+            grid-area: a;
+           
+        }
+        .item1{
+            grid-area: a;
+            background-color: lightcoral;
+        }
+        .item2{
+            grid-area: b;
+            background-color: lightblue;
+        }   
+
+        .item3{
+            grid-area: c;
+            background-color: lightgreen;
+        }
+        .item4{
+            grid-area: d;
+            background-color: lightpink;
+        }
+        .item5{
+            grid-area: e;
+            background-color: lightgray;
+        }
+        .item6{
+            grid-area: f;
+            background-color: lightyellow;
+        }
+        .parent2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "a a b"
+            "c d b";
+            gap: 10px;
+            background-color: #fff;
+            grid-area: b;
+
+        }
+        .parent2 .item1{
+            grid-area: a;
+            background-color: peachpuff;
+        }   
+        .parent2 .item2{
+            grid-area: b;
+            background-color: palegreen;
+        }
+
+        .parent2 .item3{
+            grid-area: c;
+            background-color: paleturquoise;
+        }
+        .parent2 .item4{
+            grid-area: d;
+            background-color: plum;
+        }
+        .parent3{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "a a a"
+            "b c c"
+            "d d d";
+            gap: 10px;
+            background-color: #fff;
+            grid-area: c;
+
+        }
+        .parent4{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: 
+            "a a b b"
+            "c d d d"
+            "e e e e";
+            gap: 10px;
+            background-color: #fff;
+            grid-area: d;
+        }
+        .parent5{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-areas: 
+            "a b c d e f"
+            "g h i j k l"   
+            "m n o p q r";
+            gap: 10px;
+            background-color: #fff;
+            grid-area: e;
+        }
+        .parent5 .item1{
+            grid-area: a;
+            background-color: lightcyan;
+        }   
+        .parent5 .item2{
+            grid-area: b;
+            background-color: lightgoldenrodyellow;
+        }
+        .parent5 .item3{
+            grid-area: c;
+            background-color: lightseagreen;
+        }
+        .parent5 .item4{
+            grid-area: d;
+            background-color: lightsteelblue;
+        }
+        .parent5 .item5{
+            grid-area: e;
+            background-color: lightpink;
+        }
+        .parent5 .item6{
+            grid-area: f;
+            background-color: lightgray;
+        }
+        .parent5 .item7{
+            grid-area: g;
+            background-color: lightyellow;
+        }
+        .parent5 .item8{
+            grid-area: h;
+            background-color: lightcoral;
+        }
+        .parent5 .item9{
+            grid-area: i;
+            background-color: lightblue;
+        }
+        .parent5 .item10{
+            grid-area: j;
+            background-color: lightgreen;
+        }
+        .parent5 .item11{
+            grid-area: k;
+            background-color: peachpuff;
+        }
+        .parent5 .item12{
+            grid-area: l;
+            background-color: palegreen;
+        }
+        .parent5 .item13{
+            grid-area: m;
+            background-color: paleturquoise;
+        }
+        .parent5 .item14{
+            grid-area: n;
+            background-color: plum;
+        }
+        .parent5 .item15{
+            grid-area: o;
+            background-color: lightcyan;
+        }
+
+        .parent5 .item16{
+            grid-area: p;
+            background-color: lightgoldenrodyellow;
+        }
+        .parent5 .item17{
+            grid-area: q;
+            background-color: lightseagreen;
+        }
+        .parent5 .item18{
+            grid-area: r;
+            background-color: lightsteelblue;
+        }
+        .parent6{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: 
+            "a a b c"
+            "d e f f"
+            "g g h i"
+            "g g j j"
+            "k k k l";
+            gap: 10px;
+            background-color: #fff;
+            grid-area: f;
+        }
+        .parent6 .item1{
+            grid-area: a;
+            background-color: lightpink;
+        }
+        .parent6 .item2{
+            grid-area: b;
+            background-color: lightgray;
+        }
+        .parent6 .item3{
+            grid-area: c;
+            background-color: lightyellow;
+        }
+        .parent6 .item4{
+            grid-area: d;
+            background-color: lightcoral;
+        }
+        .parent6 .item5{
+            grid-area: e;
+            background-color: lightblue;
+        }
+        .parent6 .item6{
+            grid-area: f;
+            background-color: lightgreen;
+        }
+        .parent6 .item7{
+            grid-area: g;
+            background-color: peachpuff;
+        }
+        .parent6 .item8{
+            grid-area: h;
+            background-color: palegreen;
+        }
+        .parent6 .item9{
+            grid-area: i;
+            background-color: paleturquoise;
+        }
+        .parent6 .item10{
+            grid-area: j;
+            background-color: plum;
+        }   
+        .parent6 .item11{
+            grid-area: k;
+            background-color: lightcyan;
+        }
+        .parent6 .item12{
+            grid-area: l;
+            background-color: lightgoldenrodyellow;
+        }   
+        .parent7{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: 
+            "a a b b"
+            "c c d d"
+            "c c e f";
+            gap: 10px;
+            background-color: #fff; 
+            grid-area: g;
+           
+        }
+        .parent8{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-areas: 
+            "a b c d e "
+            "f g h h h"
+            "i i i i i";
+            gap: 10px;
+            background-color: #fff; 
+            grid-area: h;
+           
+        }
+        .parent8 .item1{
+            grid-area: a;
+            background-color: lightpink;
+        }   
+        .parent8 .item2{
+            grid-area: b;
+            background-color: lightgray;
+        }
+
+        .parent8 .item3{
+            grid-area: c;
+            background-color: lightyellow;
+        }
+        .parent8 .item4{
+            grid-area: d;
+            background-color: lightcoral;
+        }
+        .parent8 .item5{
+            grid-area: e;
+            background-color: lightblue;
+        }
+        .parent8 .item6{
+            grid-area: f;
+            background-color: lightgreen;
+        }
+        .parent8 .item7{
+            grid-area: g;
+            background-color: peachpuff;
+        }
+        .parent8 .item8{
+            grid-area: h;
+            background-color: palegreen;
+        }
+        .parent8 .item9{
+            grid-area: i;
+            background-color: paleturquoise;
+        }
+        .parent9{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "a a a "
+            "b c c"
+            "b d e";
+            gap: 10px;
+            background-color: #fff; 
+            grid-area: i;
+        }
+        .parent9 .item1{
+            grid-area: a;
+            background-color: lightgreen;
+        }   
+        .parent9 .item2{
+            grid-area: b;
+            background-color: lightpink;
+        }
+        .parent9 .item3{
+            grid-area: c;
+            background-color: lightgray;
+        }
+        .parent9 .item4{
+            grid-area: d;
+            background-color: lightyellow;
+        }
+        .parent9 .item5{
+            grid-area: e;
+            background-color: lightcoral;
+        }
+
+
+
+
+    </style>
+</head>
+<body><div class="main">
+    <div class="parent1">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <div class="item3">three</div>
+        <div class="item4">four</div>
+        <div class="item5">five</div>
+        <div class="item6">six</div>  
+    </div>
+     <div class="parent2">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <div class="item3">three</div>
+        <div class="item4">four</div>  
+    </div>
+    <div class="parent3">
+        <div class="item1">img1</div>
+        <div class="item2">img2</div>
+        <div class="item3">img3</div>
+        <div class="item4">img4</div>  
+    </div>
+    <div class="parent4">
+        <div class="item1">img1</div>
+        <div class="item2">img2</div>
+        <div class="item3">img3</div>
+        <div class="item4">img4</div>
+        <div class="item5">img5</div>
+        </div>
+        <div class="parent5">
+            <div class="item1">img1</div>
+            <div class="item2">img2</div>
+            <div class="item3">img3</div>  
+            <div class="item4">img4</div>
+            <div class="item5">img5</div>
+            <div class="item6">img6</div>
+            <div class="item7">img7</div>
+            <div class="item8">img8</div>
+            <div class="item9">img9</div>
+            <div class="item10">img10</div>
+            <div class="item11">img11</div>
+            <div class="item12">img12</div>
+            <div class="item13">img13</div>
+            <div class="item14">img14</div>
+            <div class="item15">img15</div>
+            <div class="item16">img16</div>
+            <div class="item17">img17</div>
+            <div class="item18">img18</div>
+            </div>
+    <div class="parent6">
+        <div class="item1">img1</div>  
+        <div class="item2">img2</div>
+        <div class="item3">img3</div>
+        <div class="item4">img4</div>
+        <div class="item5">img5</div>
+        <div class="item6">img6</div>
+        <div class="item7">img7</div>
+        <div class="item8">img8</div>
+        <div class="item9">img9</div>
+        <div class="item10">img10</div>
+        <div class="item11">img11</div>
+        <div class="item12">img12</div>
+    </div>
+    <div class="parent7">
+        <div class="item1">img1</div>
+        <div class="item2">img2</div>
+        <div class="item3">img3</div>
+        <div class="item4">img4</div>
+        <div class="item5">img5</div>
+        <div class="item6">img6</div>
+    </div>
+    <div class="parent8">
+        <div class="item1">img1</div>
+        <div class="item2">img2</div>
+        <div class="item3">img3</div>
+        <div class="item4">img4</div>
+        <div class="item5">img5</div>
+        <div class="item6">img6</div>
+        <div class="item7">img7</div>
+        <div class="item8">img8</div>
+        <div class="item9">img9</div>
+    </div>
+    <div class="parent9">
+        <div class="item1">img1</div>
+        <div class="item2">img2</div>
+        <div class="item3">img3</div>
+        <div class="item4">img4</div>
+        <div class="item5">img5</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

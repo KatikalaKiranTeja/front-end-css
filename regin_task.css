@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- SECTION 1 (NAVBAR) ---------- */
+section:first-of-type {
+            
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* z-index: 10; */
+}
+
+/* Logo */
+.parent {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* Nav Links Container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Main nav links */
+.nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* .nav-links a:hover {
+  color: #fff;
+} */
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: #1e1e1e;
+  min-width: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Dropdown animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- SECTION 2 (HERO) ---------- */
+.nav {
+  position: relative;
+  margin-top: 80px; /* to avoid navbar overlap */
+}
+
+.nav img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+/* Overlay Text */
+.regin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.regin h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.regin p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.regin button {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.regin button:hover {
+  background: #ffa733;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  section:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .nav img {
+    height: 80vh;
+  }
+
+  .regin h2 {
+    font-size: 36px;
+  }
+}

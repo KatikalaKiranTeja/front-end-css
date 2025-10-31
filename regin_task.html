@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        nav{
+            background-color: rgb(5, 5, 5);
+            display: flex;
+            color: ghostwhite;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+        .navdrop{
+            display: flex;
+            gap: 10px;
+           
+            
+        }
+        /* ol{
+            list-style: none;
+            display: flex;
+            gap: 5px;
+        }
+        li{
+            gap: 5px;
+            margin-right: 25px;
+            
+        }
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: cursive;
+            color: ghostwhite;
+        } */
+        h3{
+            margin-left: 15px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 7px;
+        }
+        span{
+            background-color: rgb(175, 167, 167);
+            background-size: 10px;
+            padding: 5px;
+            text-align: center;
+        }
+        .btn{
+            color: white;
+        }
+        .sec1{
+            position: relative;
+        }
+        .regin{
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            justify-content: center;
+            color: white;
+            gap: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .sec2{
+            text-align: center;
+            top: 100px;
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .parent{
+            display: flex;
+            
+        }
+        .class{
+            padding: 20px 35px;
+            top: 100px;
+            
+        }
+        .class img{
+            padding: 20px 35px;
+            height: 350px;
+            width: 400px;
+        }
+        .video{
+            margin-top: 20px;
+        }
+        .sec2 h3{
+            margin-top: 50px;
+        }
+        .sec3 {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        }
+
+        .sec3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        }
+
+        .sec3 .para {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        }
+
+        .sec3 .para h3 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        }
+
+        .sec3 .para i {
+        font-size: 40px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        margin: 20px 0;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        }
+
+
+    
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>RE<span>!</span>GN</h3>
+        <!-- <ol>
+            <li><a href="">HOME</a></li>
+         <li><a href="">pages</a></li>
+         <li><a href="">components</a></li>
+         <li><a href="">docs</a></li>
+        </ol> -->
+        <div class="navdrop">
+            <div class="dropdown">
+                <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    HOME
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PAGES
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    COMPONENTS
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DOCS
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+        </div>
+
+</div>
+
+    </nav>
+    <section class="sec1">
+        <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="" width="100%" height="600px">
+            <div class="regin">
+                <h2>TAKE A BREATH</h2>
+                <p>Take every chance you get in life, because some things only happen once</p>
+                <button>OUR SERVICES</button>
+            </div>
+    </section>
+
+    <section class="sec2">
+        <h3>ABOUT US</h3>
+        <p>OUR COMPANY, IN THE SIMPLEST TERMS</p>
+        <div class="parent">
+            <div class="class">
+                <h3>WE'RE CREATIVE</h3>
+                <p>We are full-service digital marketing agency in Atlanta, and we’re also one of the topgraphic design firms because we draw to projects that challenge
+our creative work.</p>
+            </div>
+
+            <div class="class">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&s" alt="">
+            </div>
+
+            <div class="class">
+                <h3>We're friendly</h3>
+                <p>We’re proud of our work to accomplish and much of the credit goes to our amazing and unique culture which helps us to come together to overcome all of our challanging times.</p>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <section class="sec3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUb_SAqHuPx57Y-keP9dzAHNtoCo54OpRxQ&s" alt="" width="100%" height="500px">
+        <div class="para">
+            <div class="cls">
+                <h3>Watch our video</h3>
+            </div>
+
+            <div class="cls">
+            
+                <i class="fa-solid fa-play"> <video src=""></video></i>
+            </div>
+
+            <div class="cls">
+                <p>Promote your company Creating your own slogan here</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -2,9 +2,9 @@ gsap.from(".mian *",{
     duration:2,
     delay:1,
     opacity:0,
-    x:40,
-    y:-30,
-    stagger:0.5,
+        x:40,
+        y:30,
+        stagger:0.5,
 })
 gsap.from(".sec1>h1",{
     duration:2,
@@ -23,5 +23,26 @@ gsap.from(".sec2>img",{
     scale:0.5,
     scrollTrigger:".sec2>img"
 
+
+})
+
+gsap.from(".sec3>p",{
+    duration:2,
+    delay:1,
+    opacity:0,
+    scale:0.5,
+    x:40,
+    y:30,
+    scrollTrigger:".sec3>p"
+    
+})
+gsap.from(".sec4>h2",{
+    duration:2,
+    delay:2,
+    opacity:0,
+    scale:0.5,
+    rotate:260,
+    color:"blue",
+    scrollTrigger:".sec4>h2"
 
 })
